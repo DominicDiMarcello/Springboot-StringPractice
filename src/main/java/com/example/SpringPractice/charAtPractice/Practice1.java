@@ -39,8 +39,6 @@ public class Practice1 {
 
         if (subStr.charAt(0) == subStr.charAt(5)) {
             System.out.println("false");
-        } else {
-            System.out.println("NO WORKIE");
         }
 
     }
