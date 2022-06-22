@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Model: " + car.getModel());
         System.out.println("Year: " + car.getYear());
 
-        CarController.getCars();
+//        CarController.getCars();
 
     }
 }

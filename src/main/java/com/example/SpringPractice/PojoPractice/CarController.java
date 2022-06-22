@@ -3,9 +3,19 @@ package com.example.SpringPractice.PojoPractice;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin(origins = "http://localhost:4200")
+
 public class CarController {
 
-    public static List<Car> getCars() {
+    @RequestMapping(value = "/Cars", method = RequestMethod.GET)
+    public static List<Car> getCars(Car car) {
         List <Car> carList = new ArrayList<Car>();
         Car c1 = new Car();
         c1.setMake("Ferrai");
