@@ -29,4 +29,11 @@ public class Car {
     public void setYear(String year) {
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return  "\nMake: " + make + "\n" +
+                "Model: " + model + "\n" +
+                "Year: " + year;
+    }
 }
